@@ -6,14 +6,11 @@ html {
 .header {
   font-size: 1.8rem;
   line-height: 2.4rem;
-
-  height: 105px;
-  margin: 92px auto 96px auto;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 4px 50px 0 50px;
+  padding: 91px 50px;
 }
 
 .header__links-list {
@@ -51,12 +48,14 @@ html {
   line-height: 2.4rem;
 }
 
-.header__address {
+.header__address,
+.footer__address {
   width: 240px;
   list-style-type: none;
 }
 
-.header__address a {
+.header__address a,
+.footer__address a {
   border-bottom: 2px solid black;
   text-decoration: none;
 }
@@ -64,11 +63,7 @@ html {
 .cover {
   font-family: Raleway, sans-serif;
   width: 1100px;
-  height: 757px;
-  background-image: url("../images/cover.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left top;
+  background: url("../images/cover.jpg") no-repeat left top / cover;
   position: relative;
   z-index: 0;
 }
@@ -88,13 +83,9 @@ html {
   font-size: 10rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 165px;
-  padding-left: 50px;
+  padding: 164px 0px 123px 50px;
   width: 1000px;
-  height: 355px;
   color: white;
-  width: 1000px;
-  height: 355px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -117,7 +108,8 @@ html {
 
 .aligned-text_center {
   align-self: center;
-  margin-left: 22px;
+  padding-left: 22px;
+  padding-top: 3px;
 }
 
 .aligned-text_right {
@@ -131,7 +123,7 @@ html {
   justify-content: space-evenly;
   align-items: center;
   align-content: end;
-  padding-bottom: 105px;
+  padding-bottom: 52px;
 }
 
 .cover__description-text {
@@ -170,9 +162,10 @@ html {
 
 .lots__card-list {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   list-style: none;
   gap: 25px;
+  padding-top: 2px;
 }
 
 .card-link {
@@ -185,6 +178,7 @@ html {
   background-repeat: no-repeat;
   background-position: left top;
   padding: 52px 40px 48px 40px;
+  line-height: 2.4rem;
   position: relative;
   z-index: 0;
   display: flex;
@@ -277,9 +271,13 @@ html {
 }
 
 .about__text {
+  display: flex;
+  flex-direction: column;
   color: rgb(0, 0, 0);
   font-size: 2rem;
-  word-spacing: 0.1rem;
+  word-spacing: 0.04rem;
+  line-height: 2.4rem;
+  gap: 2.2rem;
 }
 
 .text-padding {
